@@ -6,7 +6,7 @@ pipeline {
         echo 'hi de amira'
       }
     }
-    stage('') {
+    stage('error') {
       steps {
         waitForQualityGate true
       }
