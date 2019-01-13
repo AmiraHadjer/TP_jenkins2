@@ -1,7 +1,12 @@
 pipeline {
   agent any
   stages {
-    stage('sonar') {
+    stage('echo') {
+      steps {
+        echo 'hi de amira'
+      }
+    }
+    stage('') {
       steps {
         waitForQualityGate true
       }
