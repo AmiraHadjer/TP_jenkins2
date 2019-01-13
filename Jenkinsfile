@@ -5,7 +5,7 @@ pipeline {
       steps {
         echo 'hi de amira'
         bat 'C:\\gradle-4.10.2-all\\gradle-4.10.2\\bin\\gradle'
-        archiveArtifacts 'build/libs/*.jar'
+        archiveArtifacts 'lib/*.jar'
       }
     }
   }
