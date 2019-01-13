@@ -1,14 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('echo') {
+    stage('Build') {
       steps {
         echo 'hi de amira'
-      }
-    }
-    stage('error') {
-      steps {
-        waitForQualityGate true
+        bat 'C:\\gradle-4.10.2-all\\gradle-4.10.2\\bin\\gradle'
       }
     }
   }
